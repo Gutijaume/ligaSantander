@@ -1,0 +1,10 @@
+1.- Ordernar los equipos por su clasificación
+2.- Mostrar todas los equipos clasificados para Europa
+3.- Agregar un jugador histórico a todos los equipos con mannager español
+4.- Agregar una nuevo equipo al listado
+5.- Mostrar los equipos con más de 20 puntos
+6.- Mostrar la clasificación del equipo que cuenta con "Vinicius" entre sus mejores jugadorsd
+7.- Agregar a las pizzas la opcion exta: borde de queso (bool)
+8.- Mostrar los mejores jugadores del cuarto clasificado
+9.- Mostrar las pizzas que tengan mas de 3 bestplayers
+10. Decuenta el 20% a los puntos de los equipos con más de tres bestplayers
