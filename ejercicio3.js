@@ -83,6 +83,13 @@ const ligaSantander = [
   },
 ];
 
+let setOrderByClassification = clasificacionLigaSantander =>{
+  clasificacionLigaSantander.sort ((a,b)=>a.class - b.class)
+  // Añado la función que cree en el primer ejercicio para ordenar el array por clasificación y la llamaré al final
+}
+
+let print = (data) => console.log(data) // Creo una función print
+
 let addClassicPlayer = (laLigaTeams) => {
   debugger
   for (let i = 0; i < laLigaTeams.length; i++) {
@@ -133,7 +140,8 @@ let addClassicPlayer = (laLigaTeams) => {
       laLigaTeams[i].bestPlayers.push("Leo Messi");
     }
   }
-  console.log(laLigaTeams);
+  setOrderByClassification(laLigaTeams)
+  print(laLigaTeams)
 }
 
 addClassicPlayer(ligaSantander);
