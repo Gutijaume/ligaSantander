@@ -63,6 +63,7 @@ const ligaSantander = [
       winner: true,
       mannager: "Imanol Alguacil",
       bestPlayers: ["Mikel Merino", "Aritz", "Oyarzabal", "Le Normand"],
+      historicPlayer: "De Pedro",
       points: 29,
     },
     {
@@ -82,7 +83,11 @@ const ligaSantander = [
       points: 23,
     },
   ];
+  
+  
 
+
+  
   let print = (data) => console.log(data) // Creo una función print
 
   let addClassicPlayer = (arrayTeams, nameOfTeam, leagueWinner = true, newPlayer) =>{
@@ -91,7 +96,13 @@ const ligaSantander = [
           team.bestPlayers.push(newPlayer)
       }) 
       print (arrayTeams)
+      //setOrderByClassification(ligaSantander)
     }
+
+    ligaSantander.forEach((equipo)=>{
+        addClassicPlayer(ligaSantander, equipo.nombre, equipo.winner, equipo.historicPlayer)
+
+    })
     addClassicPlayer (ligaSantander, "Real Madrid", undefined, "Raul Gonzalez")
     addClassicPlayer (ligaSantander, "Athletic", undefined, "Julen Guerrero")
     addClassicPlayer (ligaSantander, "Atletico de Madrid", undefined, "Fernando Torres")
@@ -103,4 +114,4 @@ const ligaSantander = [
     addClassicPlayer (ligaSantander, "FC Barcelona", undefined, "Andres Iniesta")
 
 
-    //Con el forEach he conseguido mejorar muchísimo la ejecución del código
+    //El problema con el que me encuento en esta ocasión es que me imprime nueve arrays distintos
